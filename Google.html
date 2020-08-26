@@ -5,21 +5,75 @@
 <div class="logo">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
 </div>
-</head>
 <style>
-.logo {
-    text-align: center;
-    margin-top: 10%;
-} 
-.search-bar button {
-  
+    .logo {
+        text-align: center;
+        margin-top: 10%;
+    }
+      
 </style>
+</head>
+<body>
 <div class="search-bar">
-    <form action="https://www.google.com/search" method="GET">
-    <input type="text" name="q" placeholder="">
-    <button type="submit">Google Search</button>
-    <button type="submit">I'm Feeling Lucky</button>
-    </form>
+   <input class="bar" input type="text" title="Search">
+    <a href="A"><img class="voice-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" 
+    title="Search by voice"/></a>
+    <a href="B"><img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+    title="Search by text" /></a>
+</div>
+<div class="buttons">
+    <button class="button" button type="button">Google Search</button>
+    <button class="button" button type="button">I'm Feeling Lucky</button>
+</div>
+<style>
+.search-bar {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+}
+.bar {
+    height: 45px;
+    border: none;
+    width: 480px;
+    font-size: 17px;
+    outline: none;
+}
+.voice-icon {
+    height: 21px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+.search-icon {
+    position: relative;
+    right: 520px;
+    top: 3px;
+    opacity: 0.3;
+}
+.buttons {
+    padding: 20px;
+}
+.button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(122, 115, 115);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
+}
+.button:hover {
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#808080;
+}
+
+
+</style>
+
 
 <ul class="left-links">
 <li><a href="https://about.google/">About</a></li>
@@ -31,6 +85,8 @@
 <li><a href="google_apps">Google apps</a></li>
 <li><a href="https://accounts.google.com/">Sign in</a></li>
 </ul>
+
+</body>
 <style>
 ul.left-links {
     list-style-type: none;
