@@ -10,75 +10,75 @@
 .logo {
     text-align: center;
     margin-top: 10%;
-    }
+} 
+.search-bar button {
+  
 </style>
-<div class="search">
-    <form method="GET" action="https://www.google.com/search">
-    <input type="text" name="q" placeholder="" />
-    </form>
-</div>
-<div class="buttons">
+<div class="search-bar">
+    <form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="">
     <button type="submit">Google Search</button>
-    <button type="submit"> I'm Feeling Lucky </button>
-</div>
+    <button type="submit">I'm Feeling Lucky</button>
+    </form>
 
-
-<ul>
+<ul class="left-links">
 <li><a href="https://about.google/">About</a></li>
 <li><a href="https://store.google.com/">Store</a></li>
+</ul>
+<ul class="right-links">
 <li><a href="https://www.google.com/gmail/about/">Gmail</a></li>
 <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
 <li><a href="google_apps">Google apps</a></li>
 <li><a href="https://accounts.google.com/">Sign in</a></li>
 </ul>
 <style>
-ul {
+ul.left-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
-}
+    margin-top: 20px;
+}   
 li {
     float: left;
-    
 }
 li a {
-    color: #000000;
+    color: #222;
     text-align: center;
-    padding: 100px;
+    padding: 10px;
     text-decoration: none;
+    font-size: small;
+    background: #fff;
+    font-family: arial,sans-serif;
+
 }
 li a:hover {
     text-decoration: underline;
 }
 
-</style>
+ul.right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 1620px;
+    margin-top: 20px;
 
-
-
-
-
-
-
-<style>
-    .search {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        }
-   .buttons {
-       margin-top: 20px;
-   }
-
-
-
-
-
-
+}
 
 </style>
+
+
+
+
+
+
+
+
 
 
 
