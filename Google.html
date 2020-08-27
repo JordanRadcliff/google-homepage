@@ -25,17 +25,49 @@
     <button class="button" button type="button">Google Search</button>
     <button class="button" button type="button">I'm Feeling Lucky</button>
 </div>
+
+<footer>
+    <ul class="bottom" id="footer">
+        <li><a href="https://ads.google.com/">Advertising</a></li>
+        <li><a href="https://smallbusiness.withgoogle.com/">Business</a></li>
+        <li><a href="https://www.google.com/search/howsearchworks/">How Search Works</a></li>
+        <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+        <li><a href="https://policies.google.com/terms">Terms</a></li>
+    </ul>
+</footer>
+
 <style>
+.bottom {
+    margin: 0 auto;
+    min-width: 980px;
+}
+#footer {
+    list-style-type: none;
+    bottom: 0;
+    width: 100%;
+    font-size: 10pt;
+    height: 50px;
+    position: fixed;
+    z-index: 104;
+    background: #f2f2f2;
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    
+}
+
+
+
 .search-bar {
     margin: 0 auto;
-    width: 575px;
+    width: 480px;
     border-radius: 30px;
     border: 1px solid lightgrey;
+    margin-top: 20px;
 }
 .bar {
     height: 45px;
     border: none;
-    width: 480px;
+    width: 300px;
     font-size: 17px;
     outline: none;
 }
@@ -43,11 +75,11 @@
     height: 21px;
     position: relative;
     top: 5px;
-    left: 20px;
+    left: 70px;
 }
 .search-icon {
     position: relative;
-    right: 520px;
+    right: 380px;
     top: 3px;
     opacity: 0.3;
 }
@@ -69,6 +101,10 @@
     border: 1px solid #c8c8c8;
     padding: 9px 19px;
     color:#808080;
+    
+    
+    
+    
 }
 
 
@@ -82,12 +118,53 @@
 <ul class="right-links">
 <li><a href="https://www.google.com/gmail/about/">Gmail</a></li>
 <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-<li><a href="google_apps">Google apps</a></li>
-<li><a href="https://accounts.google.com/">Sign in</a></li>
 </ul>
 
+<div class="apps">
+    
+    <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" name="Google Apps" class="apps">
+</div>
+<div class="sign-in">
+    <button class="sign-in" style="height:30px" button type="button">Sign In</button>
+</div>
+
 </body>
+
 <style>
+
+.sign-in {
+    background-color: #4885ed;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    border-radius: 5px;
+    display: block;
+    width: 19%;
+    border: none;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.apps {
+    width: 12%;
+    position: absolute;
+    top: 9px;
+    right: 65px;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+.apps:hover {
+    background: lightgrey;
+
+}
+li {
+    float: left;
+}
+
 ul.left-links {
     list-style-type: none;
     margin: 0;
@@ -95,23 +172,23 @@ ul.left-links {
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 20px;
-}   
-li {
-    float: left;
-}
+    margin-top: 20px;}
+    
+
 li a {
     color: #222;
     text-align: center;
     padding: 10px;
     text-decoration: none;
     font-size: small;
-    background: #fff;
+    
     font-family: arial,sans-serif;
+    
 
 }
 li a:hover {
     text-decoration: underline;
+    
 }
 
 ul.right-links {
@@ -123,6 +200,7 @@ ul.right-links {
     width: 100%;
     margin-left: 1620px;
     margin-top: 20px;
+    
 
 }
 
